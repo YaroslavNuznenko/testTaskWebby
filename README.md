@@ -1,4 +1,4 @@
-# ScalorsTask
+# WebbyTask
 
 # How to run
 1. Clone this repository: https://github.com/YaroslavNuznenko/testTaskWebby.git
@@ -6,5 +6,14 @@
 3. run `npm run start:dev`
 4. Navigate to `http://localhost:8080/`.
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.4.9.
+# Stack
+This is a project using the following technologies:
+- React, React Router, Redux for the frontend
+- Express and SQLite for the backend
+- Sass for styles (using the SCSS syntax)
+- Webpack for compilation
+
+
+P.s. Project without test scripts.
+
 
