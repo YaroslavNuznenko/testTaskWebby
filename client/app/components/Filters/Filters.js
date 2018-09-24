@@ -74,7 +74,7 @@ class Filters extends Component {
         </div>
         <div className="filters__wrap">
           <button onClick={() => this.toggleSearch()}>
-            {this.state.toggleSearch ? "Search by title" : "Search by actor"}
+            Toggle search type
           </button>
           <div className="searchedBlock">
             {this.state.toggleSearch ? (
