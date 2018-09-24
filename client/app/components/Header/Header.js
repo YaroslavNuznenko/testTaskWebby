@@ -2,16 +2,19 @@ import React from 'react';
 
 import { Link } from 'react-router-dom';
 
-const Header = () => (
-  <header>
-    <Link to="/">Home</Link>
 
-    <nav>
-      <Link to="/helloworld">Hello World</Link>
-    </nav>
 
-    <hr />
-  </header>
-);
+class Header extends React.Component{
+
+
+  render(){
+    return(
+      <header className="header">
+        <div className="container">
+        <Link to="/">Home</Link></div>
+      </header>
+    )
+  }
+};
 
 export default Header;

@@ -1,0 +1,31 @@
+
+Title: Lord of the Ring
+Release Year: 2003
+Format: DVD
+Stars: Elijah Wood, Orlando Bloom
+
+
+Title: Terminator
+Release Year: 1991
+Format: DVD
+Stars: Arnold Schwarzenegger, Linda Hamilton
+
+Title: Forrest Gump
+Release Year: 1994
+Format: VDS
+Stars: Tom Hanks, Rebecca Williams
+
+Title: Braveheart
+Release Year: 1995
+Format: DVD
+Stars: Mel Gibson, James Robinson
+
+Title: The Green Mile
+Release Year: 1999
+Format: VDS
+Stars: Tom Hanks, David Mors
+
+Title: Titanic
+Release Year: 1997
+Format: VDS
+Stars: Leonardo Di Caprio, Kate Winstlet

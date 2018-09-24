@@ -1,33 +1,10 @@
-# MERN-boilerplate
+# ScalorsTask
 
-This is a boilerplate project using the following technologies:
-- [React](https://facebook.github.io/react/) and [React Router](https://reacttraining.com/react-router/) for the frontend
-- [Express](http://expressjs.com/) and [Mongoose](http://mongoosejs.com/) for the backend
-- [Sass](http://sass-lang.com/) for styles (using the SCSS syntax)
-- [Webpack](https://webpack.github.io/) for compilation
+# How to run
+1. Clone this repository: https://github.com/YaroslavNuznenko/testTaskWebby.git
+2. run `npm install`
+3. run `npm run start:dev`
+4. Navigate to `http://localhost:8080/`.
 
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.4.9.
 
-## Requirements
-
-- [Node.js](https://nodejs.org/en/) 6+
-
-```shell
-npm install
-```
-
-
-## Running
-
-Make sure to add a `config.js` file in the `config` folder. See the example there for more details.
-
-Production mode:
-
-```shell
-npm start
-```
-
-Development (Webpack dev server) mode:
-
-```shell
-npm run start:dev
-```

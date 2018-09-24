@@ -1,29 +1,36 @@
 const express = require('express');
-const fs = require('fs');
+const fileUpload = require('express-fileupload');
 const historyApiFallback = require('connect-history-api-fallback');
-const mongoose = require('mongoose');
+
+const db = require('./db/dbconfig');
+let bodyParser = require('body-parser');
+
 const path = require('path');
 const webpack = require('webpack');
 const webpackDevMiddleware = require('webpack-dev-middleware');
 const webpackHotMiddleware = require('webpack-hot-middleware');
 
-const config = require('../config/config');
+// const config = require('../config/config');
 const webpackConfig = require('../webpack.config');
 
 const isDev = process.env.NODE_ENV !== 'production';
 const port  = process.env.PORT || 8080;
 
+global.__basedir = __dirname;
 
 // Configuration
 // ================================================================================================
 
-// Set up Mongoose
-mongoose.connect(isDev ? config.db_dev : config.db);
-mongoose.Promise = global.Promise;
+
 
 const app = express();
-app.use(express.urlencoded({ extended: true }));
-app.use(express.json());
+
+app.use(fileUpload());
+app.use(bodyParser.urlencoded({ extended: true }));
+app.use(bodyParser.json());
+
+// db init
+db.init();
 
 // API routes
 require('./routes')(app);
@@ -58,12 +65,12 @@ if (isDev) {
   });
 }
 
-app.listen(port, '0.0.0.0', (err) => {
+app.listen(port, '127.0.0.1', (err) => {
   if (err) {
     console.log(err);
   }
 
-  console.info('>>> 🌎 Open http://0.0.0.0:%s/ in your browser.', port);
+  console.info('>>> 🌎 Open http://localhost:%s/ in your browser.', port);
 });
 
 module.exports = app;
