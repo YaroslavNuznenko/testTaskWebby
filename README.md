@@ -3,7 +3,7 @@
 # How to run
 1. Clone this repository: https://github.com/YaroslavNuznenko/testTaskWebby.git
 2. run `npm install`
-3. run `npm run start:dev`
+3. run `npm start` or `npm run start:dev` 
 4. Navigate to `http://localhost:8080/`.
 
 # Stack
